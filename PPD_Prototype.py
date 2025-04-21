@@ -27,7 +27,8 @@ def start_stream(pre_recorded_video_path="/home/cariv/Downloads/Test_Vid_15FPS.m
         "-i", pre_recorded_video_path,
         "-c", "copy",
         "-f", "rtsp",
-        "-rtsp_flags", "listen+prefer_tcp",
+        #"-rtsp_flags", "listen+prefer_tcp",
+        "-rtsp_transport", "tcp",
         rtsp_url
     ]
     
